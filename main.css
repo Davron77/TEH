@@ -18,6 +18,10 @@ a {
   transition: all 0.6s ease-in-out;
 }
 
+.line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 /* .navbar-icon__loginItem {
   opacity: 0 !important;
   transition: all 0.6s ease-in-out;
@@ -64,7 +68,7 @@ body {
 
 .footer__socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__socials i {
@@ -89,7 +93,7 @@ button#dropdownMenuButton2:focus {
   transform: translate(-9px, 26px) !important;
 }
 
-.footer__contact {
+.header-footer__contact {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
@@ -101,7 +105,7 @@ button#dropdownMenuButton2:focus {
   color: white;
 }
 
-.footer__contact i {
+.header-footer__contact i {
   font-size: 16px;
   padding: 0 7px;
 }
@@ -212,6 +216,44 @@ header {
 
 /* HEADER NAVBAR MOBILE END */
 
+/* FOOTER START */
+
+footer {
+  background-color: var(--dark-black);
+  color: var(--dark-white);
+}
+
+footer h5 {
+  color: var(--red);
+}
+
+footer a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+footer a:hover,
+footer a:focus {
+  color: rgb(151, 149, 149);
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer__contact i {
+  font-size: 18px;
+  color: var(--red);
+  padding-right: 15px;
+}
+
+a.footer__contactItem {
+  padding-bottom: 22px;
+}
+
+/* FOOTER END */
+
 /* INDEX PAGE END */
 
 /* BODY END */
@@ -292,7 +334,7 @@ header {
     transform: translateX(-100%);
     transition: all 0.6s ease-in-out;
   }
-  .footer__contact,
+  .header-footer__contact,
   .footer__socials {
     flex-direction: column;
   }
