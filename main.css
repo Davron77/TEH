@@ -8,6 +8,10 @@ a {
   color: var(--dark-white);
 }
 
+a:hover {
+  color: rgb(151, 149, 149);
+}
+
 .open {
   opacity: 1 !important;
   transform: translateX(0) !important;
@@ -18,8 +22,22 @@ a {
   transition: all 0.6s ease-in-out;
 }
 
+.Open__displayBlock {
+  display: inline-block !important;
+}
+
 .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#bg-dark {
+  background: #131414;
+  opacity: 0.5;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
 }
 
 /* .navbar-icon__loginItem {
@@ -187,6 +205,12 @@ footer img {
   width: 122px;
 }
 
+.header-user-show {
+  position: absolute;
+  right: 0;
+  z-index: 999;
+}
+
 /* HEADER NAVBAR END */
 
 /* HEADER NAVBAR MOBILE START */
@@ -220,6 +244,117 @@ footer img {
 }
 
 /* HEADER NAVBAR MOBILE END */
+
+/* REGISTER CARD START */
+
+.header__account {
+  position: relative;
+}
+
+.card__register,
+.card__login {
+  width: 380px;
+  position: absolute;
+  background-color: var(--dark-black);
+  color: var(--dark-white);
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 0;
+  border: 1px solid #2b2925;
+  box-shadow: 0px 2px 12px #1e1f1f;
+  margin: auto;
+  right: 0;
+  display: none;
+  z-index: 999;
+}
+
+.card__account {
+  width: 380px;
+  position: absolute;
+  background-color: var(--dark-black);
+  color: var(--dark-white);
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 0;
+  border: 1px solid #2b2925;
+  box-shadow: 0px 2px 12px #1e1f1f;
+  margin: auto;
+  right: 0;
+  display: none;
+  z-index: 999;
+}
+
+.card__register h2,
+.card__login h2 {
+  font-weight: 600;
+}
+
+form .btn,
+.card__account .btn-danger {
+  border-radius: 2px;
+  font-size: 16px;
+  padding: 11px;
+  background-color: var(--red);
+}
+
+.btn-dark {
+  background-color: var(--dark-black);
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: start;
+  padding: 11px 20px;
+  border: none;
+}
+
+.btn-dark:hover {
+  background: rgba(245, 245, 247, 0.05);
+}
+
+form .register-btn__dark {
+  background-color: var(--dark-black);
+}
+
+form i,
+.card__account i {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.card__account .btn-dark i {
+  padding-right: 8px;
+}
+
+.card__account .avatar_phone {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.avatar-text h6 {
+  margin: 0;
+  padding: 4px 0;
+}
+
+.form-control {
+  background: rgba(245, 245, 247, 0.05);
+  border-radius: 2px;
+  color: var(--dark-white);
+  border: none;
+}
+
+.form-control:focus {
+  background: rgba(245, 245, 247, 0.05);
+  color: var(--dark-white);
+  box-shadow: 0 0 0 0.25rem rgb(52 52 52);
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  background-color: var(--dark-black);
+  border: 2px solid white;
+}
+
+/* REGISTER CARD END */
 
 /* FOOTER START */
 

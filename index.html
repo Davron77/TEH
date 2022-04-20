@@ -19,6 +19,8 @@
 </head>
 
 <body>
+    <div id="bg-dark">
+    </div>
     <div id="HeaderFooter" class="header__footer">
         <div class="container">
             <div class="row justify-content-between">
@@ -91,7 +93,8 @@
                         <div class="navbar-left">
                             <div class="navbar-icon__login ms-xl-4">
                                 <a class="navbar-icon__loginItem" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-                                <a class="navbar-icon__loginItem" href="#"><i class="fa-solid fa-user"></i></a>
+                                <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                        class="fa-solid fa-user"></i></a>
                             </div>
                             <div class="navbar-dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
@@ -106,6 +109,144 @@
             </nav>
         </div>
     </header>
+    <section>
+        <div class="container">
+            <div class="header__account">
+                <div id="card__register" class="card card__register">
+                    <div class="card-body p-5">
+                        <h2 class="text-start mb-4">Регистрация</h2>
+                        <form>
+                            <div class="form-outline mb-3">
+                                <label class="form-label" for="form3Example1cg">Имя</label>
+                                <input type="text" id="form3Example1cg" class="form-control form-control-lg"
+                                    placeholder="Имя" />
+                            </div>
+                            <div class="form-outline mb-3">
+                                <label class="form-label" for="form3Example3cg">Телефон</label>
+                                <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                    placeholder="+998 99 (__)___-__-__" />
+                            </div>
+                            <div class="form-outline mb-3">
+                                <label class="form-label" for="form3Example4cg">Пароль</label>
+                                <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                    placeholder="Пароль" />
+                            </div>
+                            <div class="form-check d-flex mb-5">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                                <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                            </div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-danger btn-lg w-100">Регистрация</button>
+                            </div>
+                            <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                Согласен с условиями<span class="text-muted"> Правил пользования
+                                    торговой площадкой и правилами возврата</span></p>
+                            <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                пароль?</a>
+                        </form>
+                    </div>
+                </div>
+                <div id="card__login" class="card card__login">
+                    <div class="card-body p-5">
+                        <h2 class="text-start mb-4">Логин</h2>
+                        <form>
+                            <div class="form-outline mb-3">
+                                <label class="form-label" for="form3Example3cg">Телефон</label>
+                                <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                    placeholder="+998 99 (__)___-__-__" />
+                            </div>
+                            <div class="form-outline mb-3">
+                                <label class="form-label" for="form3Example4cg">Пароль</label>
+                                <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                    placeholder="Пароль" />
+                            </div>
+                            <div class="form-check d-flex mb-5">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                                <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                            </div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-danger btn-lg w-100">Логин</button>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <button type="button"
+                                    class="btn btn-dark btn-lg w-100 register-btn__dark">Регистрация</button>
+                            </div>
+                            <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                Согласен с условиями<span class="text-muted"> Правил пользования
+                                    торговой площадкой и правилами возврата</span></p>
+                            <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                пароль?</a>
+                        </form>
+                    </div>
+                </div>
+                <div id="card__account" class="card card__account">
+                    <div class="card-body p-5">
+                        <div class="avatar d-flex align-items-end pb-4">
+                            <img src="/images/avatar.png" class="pe-3" alt="Avatar">
+                            <div class="avatar-text">
+                                <h6 class="avatar_name">Одилов Кадыр</h6>
+                                <h6 class="avatar_phone">+998 (99) 897 45 04</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex pb-2">
+                            <button type="button" class="btn btn-dark btn-lg w-100"><i class="fa-solid fa-user"></i>Мой
+                                профиль</button>
+                        </div>
+                        <div class="d-flex pb-5">
+                            <button type="button" class="btn btn-dark btn-lg w-100"><i
+                                    class="fa-solid fa-bag-shopping"></i>Корзина</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-danger btn-lg w-100 text-start"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i>Выйти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nostrum saepe facere placeat cum
+                perspiciatis dolorum at pariatur nam soluta fugiat ipsam nihil voluptates veniam, corporis quaerat
+                molestias facilis adipisci sint deleniti. Inventore deserunt voluptate temporibus neque aliquid maxime
+                vel, nobis tempore repudiandae esse ipsum voluptatibus id ut error debitis a nihil? Rerum quae labore
+                illum, temporibus, quidem minima aspernatur fuga culpa ipsa minus tenetur eligendi natus commodi sed
+                rem, accusamus laudantium consequatur sint dolorem quaerat nam optio? Iure rerum corrupti libero dicta
+                enim, magni suscipit dignissimos eligendi ipsa. Incidunt distinctio quo id et ut atque doloribus porro
+                voluptatum, excepturi, fuga eligendi repellat tempore corporis in, autem qui exercitationem sit ipsam
+                dolores quibusdam officia consectetur. Consequuntur possimus magnam vel neque, esse quidem, unde
+                voluptas nam laborum repudiandae fuga explicabo suscipit ducimus vitae quod. Ipsa illo dolores, animi ut
+                dolorum facere voluptatum sed iste dolore repudiandae neque molestias labore laudantium? Temporibus
+                maiores facere dolore deserunt ea eius delectus magni neque incidunt itaque error sint quis rerum,
+                magnam porro, laudantium nostrum alias nemo, ab libero exercitationem. A, quod impedit maxime ex,
+                aperiam mollitia voluptatem voluptate vel expedita numquam iure rem? Sint qui vitae, doloribus sunt
+                fugiat odit, ratione eius necessitatibus dolorem dolores magni nulla. Repellendus rem dicta impedit
+                ipsam. Nostrum molestias ad ullam voluptas vero. Omnis quibusdam quis aut doloremque, impedit maiores
+                quidem corporis laborum corrupti provident? Omnis sit atque officia reprehenderit error excepturi
+                explicabo vitae pariatur delectus. Dolore neque eius quisquam consequatur sit, quo velit voluptatibus
+                possimus earum. Consequatur commodi quae voluptatem sequi mollitia quis quidem, ullam expedita provident
+                quo tenetur nisi hic voluptas doloremque architecto! Quas quibusdam tempore qui dicta distinctio sed
+                consequatur explicabo hic dolore, praesentium delectus aperiam a! Perspiciatis commodi velit provident
+                facere mollitia. Aliquid beatae dignissimos cumque vero recusandae tempora nihil minus explicabo
+                aperiam. Obcaecati adipisci architecto et tempora totam minima, necessitatibus voluptas voluptatem
+                praesentium accusantium accusamus commodi assumenda at ducimus labore officia? Eligendi perferendis et
+                repellat dolor repudiandae consequuntur id, ad quos qui provident saepe repellendus, iste at enim,
+                corrupti consequatur laborum magnam error sunt eius ex temporibus sequi fugiat. Voluptas repellendus
+                itaque natus ad quisquam maiores adipisci quaerat eaque vel ea magnam voluptatum amet quibusdam neque,
+                consequatur labore blanditiis repellat? Quae veritatis consectetur iusto cum repellat consequuntur
+                tenetur vel magnam. Quibusdam fugiat laboriosam ad alias perspiciatis saepe earum cumque deleniti
+                deserunt necessitatibus, nisi odit perferendis exercitationem tempore repellendus voluptatem nulla nihil
+                porro et facere optio fuga. Enim culpa iste nemo, dolore perferendis cum eius officia ducimus! Fuga
+                reprehenderit molestias aut perspiciatis? Ipsum dolorem nobis earum enim minus modi ab minima eius atque
+                unde facilis, libero cum accusantium doloribus sed nesciunt pariatur consequatur a vitae at. Voluptatum
+                omnis mollitia aut aspernatur, optio alias quibusdam esse ratione. Magnam, commodi maxime minus
+                repellendus hic quaerat nemo eveniet temporibus! Iusto architecto sunt aperiam quod nostrum facere,
+                reprehenderit cum mollitia expedita adipisci tenetur nemo tempore ipsam inventore laboriosam laudantium
+                totam. Accusamus necessitatibus itaque molestiae voluptatibus reiciendis. Hic deleniti, eos ad illum in
+                adipisci illo voluptas dignissimos nisi a laborum possimus.</p>
+        </div>
+    </main>
     <footer id="footer">
         <div class="container">
             <div class="row row-cols-5 py-5">
