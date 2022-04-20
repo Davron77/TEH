@@ -390,6 +390,15 @@ form i,
 .catalog-menu {
   position: absolute;
   z-index: 99;
+  background-color: var(--dark-black);
+}
+
+.catalog-menu h5 {
+  color: white;
+}
+
+.catalog-menu li a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* CATALOG END */
