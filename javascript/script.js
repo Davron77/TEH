@@ -28,3 +28,17 @@ user.addEventListener("click", function () {
   bgDark.classList.toggle("Open__displayBlock");
   user.classList.toggle("header-user-show");
 });
+
+//Initialize Swiper
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 6,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
