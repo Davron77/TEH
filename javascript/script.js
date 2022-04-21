@@ -26,9 +26,9 @@ const navbarToggler = document
   });
 
 user.addEventListener("click", function () {
-  //cardRegister.classList.toggle("Open__displayBlock");
+  cardRegister.classList.toggle("Open__displayBlock");
   //cardLogin.classList.toggle("Open__displayBlock");
-  cardAccount.classList.toggle("Open__displayBlock");
+  //cardAccount.classList.toggle("Open__displayBlock");
   bgDark.classList.toggle("Open__displayBlock");
   user.classList.toggle("header-user-show");
 });
@@ -50,5 +50,53 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+    },
+    400: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// product-card
+
+var swiper = new Swiper(".product", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+    },
+    500: {
+      slidesPerView: 1.5,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });
