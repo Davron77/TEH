@@ -217,41 +217,266 @@
         <div id="Catalog" class="Catalog">
             <div class="container position-relative">
                 <div class="row my-4 pb-2">
-                    <div class="col-2">
-                        <button class="btn btn-danger catalog-btn"><i class="fa-solid fa-bars"></i> Каталог</button>
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                        <button id="catalog-btn" class="btn btn-danger catalog-btn"><i
+                                class="catalog-btn-open fa-solid fa-bars"></i><i
+                                class="catalog-btn-close fa-solid fa-xmark"></i>Каталог</button>
                     </div>
-                    <div class="col-10">
+                    <div class="col-0 col-sm-8 col-md-9 col-lg-10">
                         <div class="index-filter">
-                            <div class="index-filter-item">
-                                <p>20V Platform</p>
+                            <div class="d-none d-sm-block index-filter-item">
+                                <a href="#">20V Platform</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Sanders & Router</p>
+                            <div class="d-none d-sm-block index-filter-item">
+                                <a href="#">Sanders & Router</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Angle Grinders</p>
+                            <div class="d-none d-md-block index-filter-item">
+                                <a href="#">Angle Grinders</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Air Compressors</p>
+                            <div class="d-none d-lg-block index-filter-item">
+                                <a href="#">Air Compressors</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Welding Machines</p>
+                            <div class="d-none d-lg-block index-filter-item">
+                                <a href="#">Welding Machines</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Garden Tools</p>
+                            <div class="d-none d-xl-block index-filter-item">
+                                <a href="#">Garden Tools</a>
                             </div>
-                            <div class="index-filter-item">
-                                <p>Other Power Tools</p>
+                            <div class="d-none d-xxl-block index-filter-item">
+                                <a href="#">Other Power Tools</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="catalog-menu">
                     <div class="row">
-                        <div class="col-2 pt-5 d-flex">
+                        <div class="col-3 pt-5 d-flex">
                             <img src="/images/catalog-img.png" class="" alt="">
                             <div class="catalog-link">
-                                <h5>Service</h5>
+                                <a href="#">
+                                    <h5>20V Platform</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Drills</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Wrench</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Angle
+                                            Grinders</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Grass
+                                            Trimmer</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Rotary
+                                            Hammer</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Air Blowers</a>
+                                    </li>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Drills</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Drill</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Drill</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Torque Drill</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Impact Drill</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Angle Grinders</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Sanders & Router</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Bench Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Rotary Hammers...</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Saws</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Garden Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Heat Guns &...</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Air Compressors</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Other Power Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Welding Machines</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Water Pumps</h5>
+                                </a>
+                                <div class="catalog-line"></div>
                                 <ul class="nav flex-column pt-2">
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>

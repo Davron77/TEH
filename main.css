@@ -26,6 +26,10 @@ a:hover {
   display: inline-block !important;
 }
 
+.Open__displayNone {
+  display: none !important;
+}
+
 .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -372,6 +376,10 @@ form i,
   padding-right: 5px;
 }
 
+.catalog-btn-close {
+  display: none;
+}
+
 .index-filter {
   color: var(--dark-white);
   height: 100%;
@@ -381,7 +389,7 @@ form i,
   align-items: center;
 }
 
-.index-filter p {
+.index-filter a {
   margin: 0;
   border-left: 3px solid #e32735;
   padding-left: 7px;
@@ -391,14 +399,35 @@ form i,
   position: absolute;
   z-index: 99;
   background-color: var(--dark-black);
+  display: none;
+}
+
+.catalog-menu img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 .catalog-menu h5 {
   color: white;
+  padding: 12px 0;
+  font-size: 16px;
+  margin: 0;
+}
+
+.catalog-line {
+  border-bottom: 2px solid #e32735;
+  width: 101px;
 }
 
 .catalog-menu li a {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.catalog-link {
+  width: 180px;
 }
 
 /* CATALOG END */
@@ -566,6 +595,17 @@ a.footer__contactItem {
   .navbar-nav .nav-link {
     font-size: 25px !important;
     line-height: 30px !important;
+  }
+  .catalog-btn {
+    width: 100%;
+  }
+  .card__register,
+  .card__login,
+  .card__account {
+    width: 100%;
+  }
+  ::placeholder {
+    font-size: 16px;
   }
 }
 
