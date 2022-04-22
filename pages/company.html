@@ -2,109 +2,384 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Demo styles -->
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            height: 30%;
-            padding-top: 100px;
-        }
-
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <!-- ONLY CSS -->
+    <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
-    <!-- Swiper -->
-    <div class="container">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
-                <div class="swiper-slide">Slide 11</div>
-                <div class="swiper-slide">Slide 12</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+    <div id="company-home">
+        <div id="bg-dark">
         </div>
+        <div id="HeaderFooter" class="header__footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-10 order-lg-1 col-lg-9 col-xl-6">
+                        <div class="header-footer__contact">
+                            <a href="/" class="header-footer__contactItem footer__contactLocation">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>UZB/Toshkent</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="mailto:info@talpa.uz" class="header-footer__contactItem footer__contactMail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>support@teh-company.com</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="tel:+998-99-353-23-70" class="header-footer__contactItem footer__contactPhone">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+998 99 897 45 04</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-3 col-xl-2">
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">UZ </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">RU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container h-100">
+                <nav class="navbar navbar-expand-lg h-100">
+                    <div class="row w-100 justify-content-between align-items-center">
+                        <div class="col-2 order-lg-1 col-lg-9 col-xl-10 sm-p-0">
+                            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <div class="navbar-bars__icons">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <i class="fa-solid fa-xmark navbar-bars__icons__hide"></i>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav w-100">
+                                    <a class="nav-link" href="/pages/company.html">COMPANY</a>
+                                    <a class="nav-link" href="/pages/products.html">PRODUCTS</a>
+                                    <a class="nav-link" href="/pages/news.html">NEWS</a>
+                                    <a class="nav-link" href="/pages/suport.html">SUPORT</a>
+                                    <a class="nav-link" href="/pages/contact.html">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-2 col-xl-1 text-center text-lg-start p-0">
+                            <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Logo"></a>
+                        </div>
+                        <div class="col-2 order-lg-2 col-lg-1 col-xl-1 p-0">
+                            <div class="navbar-left">
+                                <div class="navbar-icon__login ms-xl-4">
+                                    <a class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-bag-shopping"></i></a>
+                                    <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-user"></i></a>
+                                </div>
+                                <div class="navbar-dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">UZ
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="header__account">
+                    <div id="card__register" class="card card__register">
+                        <div class="card-body p-5">
+                            <h2 class="text-start mb-4">Регистрация</h2>
+                            <form>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example1cg">Имя</label>
+                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg"
+                                        placeholder="Имя" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example3cg">Телефон</label>
+                                    <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                        placeholder="+998 99 (__)___-__-__" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example4cg">Пароль</label>
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                        placeholder="Пароль" />
+                                </div>
+                                <div class="form-check d-flex mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                        id="form2Example3cg" />
+                                    <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-danger btn-lg w-100">Регистрация</button>
+                                </div>
+                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                    Согласен с условиями<span class="text-muted"> Правил пользования
+                                        торговой площадкой и правилами возврата</span></p>
+                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                    пароль?</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="card__login" class="card card__login">
+                        <div class="card-body p-5">
+                            <h2 class="text-start mb-4">Логин</h2>
+                            <form>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example3cg">Телефон</label>
+                                    <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                        placeholder="+998 99 (__)___-__-__" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example4cg">Пароль</label>
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                        placeholder="Пароль" />
+                                </div>
+                                <div class="form-check d-flex mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                        id="form2Example3cg" />
+                                    <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-danger btn-lg w-100">Логин</button>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <button type="button"
+                                        class="btn btn-dark btn-lg w-100 register-btn__dark">Регистрация</button>
+                                </div>
+                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                    Согласен с условиями<span class="text-muted"> Правил пользования
+                                        торговой площадкой и правилами возврата</span></p>
+                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                    пароль?</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="card__account" class="card card__account">
+                        <div class="card-body p-5">
+                            <div class="avatar d-flex align-items-end pb-4">
+                                <img src="/images/avatar.png" class="pe-3" alt="Avatar">
+                                <div class="avatar-text">
+                                    <h6 class="avatar_name">Одилов Кадыр</h6>
+                                    <h6 class="avatar_phone">+998 (99) 897 45 04</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex pb-2">
+                                <button type="button" class="btn btn-dark btn-lg w-100"><i
+                                        class="fa-solid fa-user"></i>Мой
+                                    профиль</button>
+                            </div>
+                            <div class="d-flex pb-5">
+                                <button type="button" class="btn btn-dark btn-lg w-100"><i
+                                        class="fa-solid fa-bag-shopping"></i>Корзина</button>
+                            </div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-danger btn-lg w-100 text-start"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i>Выйти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-
-    <!-- Swiper JS -->
+    <main id="company-main">
+        <div class="container">
+            <div class="company-bg py-md-5">
+                <img src="/images/company-img.png" alt="Bg-image">
+            </div>
+            <div class="page-title mt-5">
+                <h3 class="white-text">ABOUT US</h3>
+            </div>
+            <div class="company-about mt-3">
+                <div class="row">
+                    <div class="col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-img">
+                            <img src="/images/company-about-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-title">
+                            <h1>We welcome the customers from all over the world contacting with us for the mutual
+                                beneficial cooperation!</h1>
+                        </div>
+                        <div class="company-about-text">
+                            <p>TEH is the international brand specialized in different kinds of tools such as Hand
+                                tools, Power tools, Air tools, wood
+                                working tools, Cutting tools, Welding tools and accessories for over 20 years with
+                                premium quality collection of the
+                                tools which make TEH as the unique tools brand in the world on the basis of Variety.</p>
+                            <p>Based on our principle of "market-oriented and customer-oriented", we are constantly
+                                improving our product quality and
+                                developing the latest products to meet customers' demands. Our products conform to the
+                                safety requirements of
+                                international standards. Our well-trained QC team carries out inspections during each
+                                stage of our production to control
+                                the quality before shipment.</p>
+                        </div>
+                    </div>
+                    <div class="order-lg-2 col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-img">
+                            <img src="/images/company-about-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="order-lg-1 col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-title">
+                            <h1>We welcome the customers from all over the world contacting with us for the mutual
+                                beneficial cooperation!</h1>
+                        </div>
+                        <div class="company-about-text">
+                            <p>TEH is the international brand specialized in different kinds of tools such as Hand
+                                tools, Power tools, Air tools, wood
+                                working tools, Cutting tools, Welding tools and accessories for over 20 years with
+                                premium quality collection of the
+                                tools which make TEH as the unique tools brand in the world on the basis of Variety.</p>
+                            <p>Based on our principle of "market-oriented and customer-oriented", we are constantly
+                                improving our product quality and
+                                developing the latest products to meet customers' demands. Our products conform to the
+                                safety requirements of
+                                international standards. Our well-trained QC team carries out inspections during each
+                                stage of our production to control
+                                the quality before shipment.</p>
+                        </div>
+                    </div>
+                    <div class="order-lg-3 col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-img">
+                            <img src="/images/company-about-img-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="order-lg-4 col-12 col-lg-6 my-3 my-lg-5">
+                        <div class="company-about-title">
+                            <h1>We welcome the customers from all over the world contacting with us for the mutual
+                                beneficial cooperation!</h1>
+                        </div>
+                        <div class="company-about-text">
+                            <p>TEH is the international brand specialized in different kinds of tools such as Hand
+                                tools, Power tools, Air tools, wood
+                                working tools, Cutting tools, Welding tools and accessories for over 20 years with
+                                premium quality collection of the
+                                tools which make TEH as the unique tools brand in the world on the basis of Variety.</p>
+                            <p>Based on our principle of "market-oriented and customer-oriented", we are constantly
+                                improving our product quality and
+                                developing the latest products to meet customers' demands. Our products conform to the
+                                safety requirements of
+                                international standards. Our well-trained QC team carries out inspections during each
+                                stage of our production to control
+                                the quality before shipment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row row-cols-5 py-5">
+                <div class="py-3 col-12 col-lg-12 col-xl-2">
+                    <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="py-3 col-6 col-lg-4 col-xl-2">
+                    <h5>Service</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-6 col-lg-4 col-xl-2">
+                    <h5>Service</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Rotary Hammers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Sanders & Router</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Demolition Hammers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">20V Platform & Drills</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Angle Grinders</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Water Pumps</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-6 col-lg-4 d-lg-block d-none col-xl-2">
+                    <h5>Company</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Catolog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-12 col-lg-12 col-xl-4">
+                    <div class="footer__contact">
+                        <a href="tel:+998-99-353-23-70" class="footer__contactItem footer__contactPhone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+998 99 897 45 04</p>
+                        </a>
+                        <a href="mailto:info@talpa.uz" class="footer__contactItem footer__contactMail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@teh-company.com</p>
+                        </a>
+                        <a href="/" class="footer__contactItem footer__contactLocation">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>г.Ташкент, Т Урикзар "Стройгород" 3 блок, 1179-магазин.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p class="col-md-3 mb-0">© 2022 Teh-company.</p>
+                <ul class="nav col-md-7 justify-content-end justify-content-lg-between">
+                    <li class="nav-item"><a href="#" class="nav-link px-0">Privacy Policy</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Terms of Use</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Sales and Refunds</a>
+                    </li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Legal</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 6,
-            spaceBetween: 30,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="/javascript/script.js"></script>
 </body>
 
 </html>

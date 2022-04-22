@@ -39,7 +39,11 @@ a:hover {
 }
 
 .white-text {
-  color: white;
+  color: white !important;
+}
+
+.black-text {
+  color: var(--dark-black) !important;
 }
 
 #bg-dark {
@@ -622,11 +626,13 @@ form i,
   justify-content: space-between;
 }
 
-.product-card-slider-title {
+.product-card-slider-title,
+.page-title {
   border-left: 6px solid var(--red);
 }
 
-.product-card-slider-title h3 {
+.product-card-slider-title h3,
+.page-title h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -755,6 +761,38 @@ a.footer__contactItem {
 
 /* INDEX PAGE END */
 
+/* COMPANY PAGE START */
+
+#company-main {
+  background-color: var(--dark-black);
+  color: white;
+}
+
+.company-bg img {
+  width: 100%;
+}
+
+.company-about-img img {
+  width: 100%;
+}
+
+.company-about-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+}
+
+.company-about-text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: rgba(245, 245, 247, 0.8);
+}
+
+/* COMPANY PAGE END */
+
 /* BODY END */
 
 /* MEDIA QUERIE START */
@@ -832,7 +870,8 @@ a.footer__contactItem {
     font-size: 10px;
     line-height: 12px;
   }
-  .product-card-slider-title h3 {
+  .product-card-slider-title h3,
+  .page-title h3 {
     font-size: 20px !important;
     line-height: 24px !important;
     padding-left: 5px;
@@ -841,6 +880,15 @@ a.footer__contactItem {
   .product-card-slider-more-btn a {
     font-size: 12px;
     line-height: 15px;
+  }
+  .company-about-title h1 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+
+  .company-about-text p {
+    font-size: 16px !important;
+    line-height: 22px !important;
   }
 }
 
@@ -908,13 +956,18 @@ a.footer__contactItem {
   .index-best-product-box-2 {
     margin-top: 30px;
   }
-  .product-card-slider-title h3 {
+  .product-card-slider-title h3,
+  .page-title h3 {
     font-size: 26px;
     line-height: 24px;
   }
 }
 
 @media (max-width: 1199.98px) {
+  .company-about-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 1399.98px) {
