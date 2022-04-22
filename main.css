@@ -359,13 +359,13 @@ form i,
 .form-control {
   background: rgba(245, 245, 247, 0.05);
   border-radius: 2px;
-  color: var(--dark-white);
+  color: var(--dark-black);
   border: none;
 }
 
 .form-control:focus {
   background: rgba(245, 245, 247, 0.05);
-  color: var(--dark-white);
+  color: var(--dark-black);
   box-shadow: 0 0 0 0.25rem rgb(52 52 52);
 }
 
@@ -374,6 +374,20 @@ form i,
   height: 18px;
   background-color: var(--dark-black);
   border: 2px solid white;
+}
+
+.product-price-control {
+  display: flex;
+}
+
+.products-form-check .form-check-input {
+  background-color: transparent;
+  border-color: var(--dark-black);
+}
+
+.form-check-input:checked {
+  background-color: var(--red) !important;
+  border-color: var(--red);
 }
 
 /* REGISTER CARD END */
@@ -446,9 +460,9 @@ form i,
 
 /* HOME SLIDER START */
 
-.home-slider {
+/* .home-slider {
   background-color: var(--dark-black);
-}
+} */
 
 .slider-btn {
   width: 54px;
@@ -467,9 +481,9 @@ form i,
 
 /* CARD SLIDER START */
 
-.home-card-slider-group {
+/* .home-card-slider-group {
   background-color: var(--dark-black);
-}
+} */
 
 .swiper {
   width: 100%;
@@ -793,6 +807,63 @@ a.footer__contactItem {
 
 /* COMPANY PAGE END */
 
+/* PRODUCTS PAGE START */
+
+#products-home {
+  background-color: var(--dark-black);
+}
+
+.product-input {
+  background: #f5f5f7;
+  border: 2px solid #131414;
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  background: rgba(245, 245, 247, 0.05);
+  color: var(--dark-black);
+  box-shadow: none;
+}
+
+.product-input i {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  color: rgb(151, 149, 149);
+}
+
+.form-inputs i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.accordion-item {
+  background-color: var(--dark-white);
+  border: none;
+}
+
+.accordion-button {
+  background-color: var(--dark-white);
+  color: var(--red);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--red);
+  background-color: var(--dark-white);
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e32735'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e32735'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* PRODUCTS PAGE END */
+
 /* BODY END */
 
 /* MEDIA QUERIE START */
@@ -971,5 +1042,10 @@ a.footer__contactItem {
 }
 
 @media (max-width: 1399.98px) {
+  .product-page-card-slider .product-card-slider-title h3,
+  .page-title h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 /* MEDIA QUERIE END */
