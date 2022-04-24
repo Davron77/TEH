@@ -214,16 +214,16 @@
                 </div>
             </div>
         </section>
-        <div id="Catalog" class="Catalog">
+        <div id="Catalog" class="Catalog product-catalog">
             <div class="container position-relative">
-                <div class="row my-4 pb-3">
-                    <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                <div class="row py-3 mt-2">
+                    <div class="col-6 col-lg-2">
                         <button id="catalog-btn" class="btn btn-danger catalog-btn"><i
                                 class="catalog-btn-open fa-solid fa-bars"></i><i
                                 class="catalog-btn-close fa-solid fa-xmark"></i>Каталог</button>
                     </div>
-                    <div class="d-none d-lg-block col-0 col-sm-8 col-md-9 col-lg-10">
-                        <div class="index-filter">
+                    <div class="col-6 col-lg-10">
+                        <div class="index-filter d-none d-lg-flex">
                             <div class="d-none d-sm-block index-filter-item">
                                 <a href="#">20V Platform</a>
                             </div>
@@ -246,6 +246,8 @@
                                 <a href="#">Other Power Tools</a>
                             </div>
                         </div>
+                        <button id="product-filter-btn" class="btn btn-dark product-filter-btn"><i
+                                class="fa-solid fa-filter"></i>Фильтр</button>
                     </div>
                 </div>
                 <div class="catalog-menu">
@@ -501,688 +503,694 @@
             </nav>
         </div>
     </div>
-    <main>
+    <main class="position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3 mt-5">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseOne">Категория</button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-                                    <div class="input-group product-input">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" class="form-control" aria-label="Sizing example input"
-                                            aria-describedby="inputGroup-sizing-default" placeholder="Поиск">
-                                    </div>
-                                    <div class="products-form-check">
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">Drills</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckChecked1">
-                                            <label class="form-check-label" for="flexCheckChecked1">20V Platform</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckChecked2">
-                                            <label class="form-check-label" for="flexCheckChecked2">Angle
-                                                Grinders</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault3">
-                                            <label class="form-check-label" for="flexCheckDefault3">Sanders &
-                                                Router</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault4">
-                                            <label class="form-check-label" for="flexCheckDefault4">Bench Tools</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault5">
-                                            <label class="form-check-label" for="flexCheckDefault5">Rotary
-                                                Hammers</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault6">
-                                            <label class="form-check-label" for="flexCheckDefault6">Demolition
-                                                Hammers</label>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault7">
-                                            <label class="form-check-label" for="flexCheckDefault7">Saws</label>
+                <div class="col-12 col-lg-3">
+                    <div class="product-filter mt-5">
+                        <div class="container p-0">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseOne">Категория</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                            <div class="input-group product-input">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-default" placeholder="Поиск">
+                                            </div>
+                                            <div class="products-form-check">
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckDefault">Drills</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked1">
+                                                    <label class="form-check-label" for="flexCheckChecked1">20V
+                                                        Platform</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked2">
+                                                    <label class="form-check-label" for="flexCheckChecked2">Angle
+                                                        Grinders</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault3">
+                                                    <label class="form-check-label" for="flexCheckDefault3">Sanders &
+                                                        Router</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault4">
+                                                    <label class="form-check-label" for="flexCheckDefault4">Bench
+                                                        Tools</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault5">
+                                                    <label class="form-check-label" for="flexCheckDefault5">Rotary
+                                                        Hammers</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault6">
+                                                    <label class="form-check-label" for="flexCheckDefault6">Demolition
+                                                        Hammers</label>
+                                                </div>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault7">
+                                                    <label class="form-check-label" for="flexCheckDefault7">Saws</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseTwo">Цена</button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    <div class="product-price-control">
-                                        <div class="mb-3 me-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Max</label>
-                                            <input type="email" class="border border-2 border-dark form-control"
-                                                id="exampleFormControlInput1" placeholder="1000">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseTwo">Цена</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">
+                                            <div class="product-price-control">
+                                                <div class="mb-3 me-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Max</label>
+                                                    <input type="email" class="border border-2 border-dark form-control"
+                                                        id="exampleFormControlInput1" placeholder="1000">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Min</label>
+                                                    <input type="email" class="border border-2 border-dark form-control"
+                                                        id="exampleFormControlInput1" placeholder="15 000 000">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Min</label>
-                                            <input type="email" class="border border-2 border-dark form-control"
-                                                id="exampleFormControlInput1" placeholder="15 000 000">
-                                        </div>
+                                    </div>
+                                    <div class="accordion-body pb-5">
+                                        <button id="product-filter-btn"
+                                            class="btn btn-dark product-filter-btn">Преминить</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-9 mt-5">
+                <div class="col-12 col-lg-9 mt-lg-5 mb-5">
                     <div id="#home-slider" class="home-slider">
-                        <div class="container">
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
-                                    </div>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span class="slider-btn"><i class="fa-solid fa-chevron-left"></i></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span class="slider-btn"><i class="fa-solid fa-chevron-right"></i></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                    <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/Slider.png" class="d-block w-100" alt="Slider">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="slider-btn"><i class="fa-solid fa-chevron-left"></i></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="slider-btn"><i class="fa-solid fa-chevron-right"></i></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                     <div id="#home-card-slider-group" class="home-card-slider-group py-5">
-                        <div class="container">
-                            <div class="swiper product-Swiper">
+                        <div class="swiper product-Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
+                                    <div class="card-slider-title">
+                                        <p>20V Platform</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="product-card-slider-group product-page-card-slider my-lg-5">
+                        <div class="product-card-slider-1">
+                            <div class="row mb-4 pb-3">
+                                <div class="col-12">
+                                    <div class="product-card-slider-header">
+                                        <div class="product-card-slider-title">
+                                            <h3>POWER TOOLS</h3>
+                                        </div>
+                                        <div class="product-card-slider-more-btn">
+                                            <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper product">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide home-card-slider"><img src="/images/card.png" alt="card">
-                                        <div class="card-slider-title">
-                                            <p>20V Platform</p>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="product-card-slider-group product-page-card-slider my-5 pt-5">
-                            <div class="product-card-slider-1">
-                                <div class="row mb-4 pb-3">
-                                    <div class="col-12">
-                                        <div class="product-card-slider-header">
-                                            <div class="product-card-slider-title">
-                                                <h3>POWER TOOLS</h3>
-                                            </div>
-                                            <div class="product-card-slider-more-btn">
-                                                <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
-                                            </div>
+                        <div class="product-card-slider-2 mt-5 pt-5">
+                            <div class="row mb-4 pb-3">
+                                <div class="col-12">
+                                    <div class="product-card-slider-header">
+                                        <div class="product-card-slider-title">
+                                            <h3>BENCH TOOLS</h3>
+                                        </div>
+                                        <div class="product-card-slider-more-btn">
+                                            <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper product">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <div class="product-card-slider-2 mt-5 pt-5">
-                                <div class="row mb-4 pb-3">
-                                    <div class="col-12">
-                                        <div class="product-card-slider-header">
-                                            <div class="product-card-slider-title">
-                                                <h3>BENCH TOOLS</h3>
+                            <div class="swiper product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
-                                            <div class="product-card-slider-more-btn">
-                                                <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper product">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="product-card-slider-3 mt-5 pt-5">
+                            <div class="row mb-4 pb-3">
+                                <div class="col-12">
+                                    <div class="product-card-slider-header">
+                                        <div class="product-card-slider-title">
+                                            <h3>INVERTER WELDING MACHINE</h3>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
+                                        <div class="product-card-slider-more-btn">
+                                            <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <div class="product-card-slider-3 mt-5 pt-5">
-                                <div class="row mb-4 pb-3">
-                                    <div class="col-12">
-                                        <div class="product-card-slider-header">
-                                            <div class="product-card-slider-title">
-                                                <h3>INVERTER WELDING MACHINE</h3>
+                            <div class="swiper product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
-                                            <div class="product-card-slider-more-btn">
-                                                <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper product">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="product-card-slider-4 mt-5 pt-5">
+                            <div class="row mb-4 pb-3">
+                                <div class="col-12">
+                                    <div class="product-card-slider-header">
+                                        <div class="product-card-slider-title">
+                                            <h3>GARDEN TOOLS</h3>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
+                                        <div class="product-card-slider-more-btn">
+                                            <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <div class="product-card-slider-4 mt-5 pt-5">
-                                <div class="row mb-4 pb-3">
-                                    <div class="col-12">
-                                        <div class="product-card-slider-header">
-                                            <div class="product-card-slider-title">
-                                                <h3>GARDEN TOOLS</h3>
+                            <div class="swiper product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
-                                            <div class="product-card-slider-more-btn">
-                                                <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper product">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-card">
-                                                <div class="product-card-item text-start">
-                                                    <div class="product-card-img">
-                                                        <img src="/images/card.png" class="card-img-top" alt="...">
-                                                    </div>
-                                                    <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
-                                                    <h5
-                                                        class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
-                                                        7
-                                                        329 900 Сум
-                                                    </h5>
-                                                    <p class="product-card-text">20V Platform/Cordless Angle Grinders
-                                                    </p>
-                                                    <button class="btn btn-danger product-card-btn w-100"><i
-                                                            class="fa-solid fa-bag-shopping pe-2"></i>В
-                                                        корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
