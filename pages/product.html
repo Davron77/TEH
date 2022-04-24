@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ONLY CSS -->
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div id="products-home">
+        <div id="bg-dark">
+        </div>
+        <div id="HeaderFooter" class="header__footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-10 order-lg-1 col-lg-9 col-xl-6">
+                        <div class="header-footer__contact">
+                            <a href="/" class="header-footer__contactItem footer__contactLocation">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>UZB/Toshkent</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="mailto:info@talpa.uz" class="header-footer__contactItem footer__contactMail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>support@teh-company.com</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="tel:+998-99-353-23-70" class="header-footer__contactItem footer__contactPhone">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+998 99 897 45 04</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-3 col-xl-2">
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">UZ </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">RU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container h-100">
+                <nav class="navbar navbar-expand-lg h-100">
+                    <div class="row w-100 justify-content-between align-items-center">
+                        <div class="col-2 order-lg-1 col-lg-9 col-xl-10 sm-p-0">
+                            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <div class="navbar-bars__icons">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <i class="fa-solid fa-xmark navbar-bars__icons__hide"></i>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav w-100">
+                                    <a class="nav-link" href="/pages/company.html">COMPANY</a>
+                                    <a class="nav-link" href="/pages/all-products.html">PRODUCTS</a>
+                                    <a class="nav-link" href="/pages/news.html">NEWS</a>
+                                    <a class="nav-link" href="/pages/suport.html">SUPORT</a>
+                                    <a class="nav-link" href="/pages/contact.html">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-2 col-xl-1 text-center text-lg-start p-0">
+                            <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Logo"></a>
+                        </div>
+                        <div class="col-2 order-lg-2 col-lg-1 col-xl-1 p-0">
+                            <div class="navbar-left">
+                                <div class="navbar-icon__login ms-xl-4">
+                                    <a class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-bag-shopping"></i></a>
+                                    <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-user"></i></a>
+                                </div>
+                                <div class="navbar-dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">UZ
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="header__account">
+                    <div id="card__register" class="card card__register">
+                        <div class="card-body p-5">
+                            <h2 class="text-start mb-4">Регистрация</h2>
+                            <form>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example1cg">Имя</label>
+                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg"
+                                        placeholder="Имя" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example3cg">Телефон</label>
+                                    <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                        placeholder="+998 99 (__)___-__-__" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example4cg">Пароль</label>
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                        placeholder="Пароль" />
+                                </div>
+                                <div class="form-check d-flex mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                        id="form2Example3cg" />
+                                    <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-danger btn-lg w-100">Регистрация</button>
+                                </div>
+                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                    Согласен с условиями<span class="text-muted"> Правил пользования
+                                        торговой площадкой и правилами возврата</span></p>
+                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                    пароль?</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="card__login" class="card card__login">
+                        <div class="card-body p-5">
+                            <h2 class="text-start mb-4">Логин</h2>
+                            <form>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example3cg">Телефон</label>
+                                    <input type="text" id="form3Example3cg" class="form-control form-control-lg"
+                                        placeholder="+998 99 (__)___-__-__" />
+                                </div>
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="form3Example4cg">Пароль</label>
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg"
+                                        placeholder="Пароль" />
+                                </div>
+                                <div class="form-check d-flex mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                        id="form2Example3cg" />
+                                    <label class="form-check-label" for="form2Example3g">Запомните меня</label>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-danger btn-lg w-100">Логин</button>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <button type="button"
+                                        class="btn btn-dark btn-lg w-100 register-btn__dark">Регистрация</button>
+                                </div>
+                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
+                                    Согласен с условиями<span class="text-muted"> Правил пользования
+                                        торговой площадкой и правилами возврата</span></p>
+                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
+                                    пароль?</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="card__account" class="card card__account">
+                        <div class="card-body p-5">
+                            <div class="avatar d-flex align-items-end pb-4">
+                                <img src="/images/avatar.png" class="pe-3" alt="Avatar">
+                                <div class="avatar-text">
+                                    <h6 class="avatar_name">Одилов Кадыр</h6>
+                                    <h6 class="avatar_phone">+998 (99) 897 45 04</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex pb-2">
+                                <button type="button" class="btn btn-dark btn-lg w-100"><i
+                                        class="fa-solid fa-user"></i>Мой
+                                    профиль</button>
+                            </div>
+                            <div class="d-flex pb-5">
+                                <button type="button" class="btn btn-dark btn-lg w-100"><i
+                                        class="fa-solid fa-bag-shopping"></i>Корзина</button>
+                            </div>
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-danger btn-lg w-100 text-start"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i>Выйти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="Catalog" class="Catalog product-catalog">
+            <div class="container position-relative">
+                <div class="row py-3 mt-2">
+                    <div class="col-6 col-lg-2">
+                        <button id="catalog-btn" class="btn btn-danger catalog-btn"><i
+                                class="catalog-btn-open fa-solid fa-bars"></i><i
+                                class="catalog-btn-close fa-solid fa-xmark"></i>Каталог</button>
+                    </div>
+                    <div class="col-6 col-lg-10">
+                        <div class="index-filter d-none d-lg-flex">
+                            <div class="d-none d-sm-block index-filter-item">
+                                <a href="#">20V Platform</a>
+                            </div>
+                            <div class="d-none d-sm-block index-filter-item">
+                                <a href="#">Sanders & Router</a>
+                            </div>
+                            <div class="d-none d-md-block index-filter-item">
+                                <a href="#">Angle Grinders</a>
+                            </div>
+                            <div class="d-none d-lg-block index-filter-item">
+                                <a href="#">Air Compressors</a>
+                            </div>
+                            <div class="d-none d-lg-block index-filter-item">
+                                <a href="#">Welding Machines</a>
+                            </div>
+                            <div class="d-none d-xl-block index-filter-item">
+                                <a href="#">Garden Tools</a>
+                            </div>
+                            <div class="d-none d-xxl-block index-filter-item">
+                                <a href="#">Other Power Tools</a>
+                            </div>
+                        </div>
+                        <button id="product-filter-btn" class="btn btn-dark product-filter-btn"><i
+                                class="fa-solid fa-filter"></i>Фильтр</button>
+                    </div>
+                </div>
+                <div class="catalog-menu">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5">
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>20V Platform</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Drills</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Wrench</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Angle
+                                            Grinders</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Grass
+                                            Trimmer</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Rotary
+                                            Hammer</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Air Blowers</a>
+                                    </li>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Drills</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cordless Drill</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Drill</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Torque Drill</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Impact Drill</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Angle Grinders</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Sanders & Router</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Bench Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Rotary Hammers...</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Saws</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Garden Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Heat Guns &...</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Air Compressors</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Other Power Tools</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Welding Machines</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex">
+                            <img src="/images/catalog-img.png" class="" alt="">
+                            <div class="catalog-link">
+                                <a href="#">
+                                    <h5>Water Pumps</h5>
+                                </a>
+                                <div class="catalog-line"></div>
+                                <ul class="nav flex-column pt-2">
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-none d-lg-block">
+            <nav class="py-3" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/pages/all-products.html">Product</a></li>
+                    <li class="breadcrumb-item active">ROTARY HAMMER - TH2607</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <main class="position-relative">
+        <div class="container">
+            <div class="row mt-5 justify-content-between">
+                <div class="col-4">
+                    <div class="product-image">
+                        <img class="w-100" src="/images/card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="product-info-header">
+                        <div class="page-title">
+                            <h3>ROTARY HAMMER<br><span class="red-text">TH2607</span></h3>
+                        </div>
+                        <div class="product-price my-4">
+                            <h3>20 000 000 UZS</h3>
+                        </div>
+                        <div class="product-info-body">
+                            <div class="product-counter me-5">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        id="button-addon1">+</button>
+                                    <input type="text" class="form-control border text-center" value="1">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        id="button-addon1">-</button>
+                                </div>
+                                <button id="catalog-btn" class="btn btn-danger catalog-btn"><i
+                                        class="fa-solid fa-bag-shopping"></i>В
+                                    корзину</button>
+                                <div class="product-contact mt-3">
+                                    <div class="product-contact-item">
+                                        <a href="#" class="product-contact-link"><i class="fa-solid fa-phone"></i></a>
+                                    </div>
+                                    <div class="product-contact-item">
+                                        <a href="#" class="product-contact-link"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="product-contact-item">
+                                        <a href="#" class="product-contact-link"><i class="fa-solid fa-copy"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-title">
+                                    <h5>Category :Дрели</h5>
+                                </div>
+                                <div class="product-info-desc">
+                                    <p>Availability : 25 Products In Stock</p>
+                                    <p>Packaging & Delivery</p>
+                                    <p>Leading time: 7 Days</p>
+                                    <p>Port：NingBo</p>
+                                    <p>Packing details：Color Box</p>
+                                    <p>5PCS/CTN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-parameters">
+                <div class="page-title mb-5">
+                    <h3>PRODUCT PARAMETERS</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="product-parameter-item">
+                            <p>Tool Holder</p>
+                            <p class="border-tow-text"></p>
+                            <p>SDS-PLUS</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Impact Force</p>
+                            <p class="border-tow-text"></p>
+                            <p>3.0J</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Voltage</p>
+                            <p class="border-tow-text"></p>
+                            <p>220V</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Frequency</p>
+                            <p class="border-tow-text"></p>
+                            <p>50Hz</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Input Power</p>
+                            <p class="border-tow-text"></p>
+                            <p>800W</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>No-load Speed</p>
+                            <p class="border-tow-text"></p>
+                            <p>0-900r/min</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Impact Rate</p>
+                            <p class="border-tow-text"></p>
+                            <p>0-5500bpm</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="product-parameter-item">
+                            <p>Tool Holder</p>
+                            <p class="border-tow-text"></p>
+                            <p>SDS-PLUS</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Impact Force</p>
+                            <p class="border-tow-text"></p>
+                            <p>3.0J</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Voltage</p>
+                            <p class="border-tow-text"></p>
+                            <p>220V</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Frequency</p>
+                            <p class="border-tow-text"></p>
+                            <p>50Hz</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>Rated Input Power</p>
+                            <p class="border-tow-text"></p>
+                            <p>800W</p>
+                        </div>
+                        <div class="product-parameter-item">
+                            <p>No-load Speed</p>
+                            <p class="border-tow-text"></p>
+                            <p>0-900r/min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="product-card-slider-group product-page-card-slider my-lg-5">
+                        <div class="product-card-slider">
+                            <div class="row mb-4 pb-3">
+                                <div class="col-12">
+                                    <div class="product-card-slider-header">
+                                        <div class="product-card-slider-title">
+                                            <h3>RELETED PRODUCT</h3>
+                                        </div>
+                                        <div class="product-card-slider-more-btn">
+                                            <a href="#">смотреть все <i class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper index-page-product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card-item text-start">
+                                                <div class="product-card-img">
+                                                    <img src="/images/card.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <h5 class="product-card-price mt-3">7 500 000 Сум</h5>
+                                                <h5
+                                                    class="product-card-price-discount text-decoration-line-through fs-6 text-muted">
+                                                    7
+                                                    329 900 Сум
+                                                </h5>
+                                                <p class="product-card-text">20V Platform/Cordless Angle Grinders
+                                                </p>
+                                                <button class="btn btn-danger product-card-btn w-100"><i
+                                                        class="fa-solid fa-bag-shopping pe-2"></i>В
+                                                    корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row row-cols-5 py-5">
+                <div class="py-3 col-12 col-lg-12 col-xl-2">
+                    <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="py-3 col-6 col-lg-4 col-xl-2">
+                    <h5>Service</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Garden Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Welding Machines</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Other Power Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Air Compressors</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Heat Guns & Saws</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Spray Guns</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-6 col-lg-4 col-xl-2">
+                    <h5>Service</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Rotary Hammers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Sanders & Router</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Demolition Hammers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">20V Platform & Drills</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Angle Grinders</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Water Pumps</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-6 col-lg-4 d-lg-block d-none col-xl-2">
+                    <h5>Company</h5>
+                    <ul class="nav flex-column pt-4">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Catolog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="py-3 col-12 col-lg-12 col-xl-4">
+                    <div class="footer__contact">
+                        <a href="tel:+998-99-353-23-70" class="footer__contactItem footer__contactPhone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+998 99 897 45 04</p>
+                        </a>
+                        <a href="mailto:info@talpa.uz" class="footer__contactItem footer__contactMail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@teh-company.com</p>
+                        </a>
+                        <a href="/" class="footer__contactItem footer__contactLocation">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>г.Ташкент, Т Урикзар "Стройгород" 3 блок, 1179-магазин.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p class="col-md-3 mb-0">© 2022 Teh-company.</p>
+                <ul class="nav col-md-7 justify-content-end justify-content-lg-between">
+                    <li class="nav-item"><a href="#" class="nav-link px-0">Privacy Policy</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Terms of Use</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Sales and Refunds</a>
+                    </li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Legal</a></li>
+                    <li class="d-none d-lg-block nav-item"><a href="#" class="nav-link px-0">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>

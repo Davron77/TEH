@@ -890,6 +890,77 @@ a.footer__contactItem {
 
 /* PRODUCTS PAGE END */
 
+/* PRODUCT PAGE START */
+
+.product-image {
+  width: 100%;
+  background-color: var(--dark-black);
+}
+
+.product-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info-body {
+  display: flex;
+}
+
+.product-counter {
+  width: 202px;
+}
+
+.product-contact-item {
+  width: 48px;
+  height: 48px;
+  background-color: var(--dark-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.product-contact-link i {
+  font-size: 18px;
+}
+
+.product-price h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.product-info-title h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #191414;
+}
+
+.product-info-desc p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-parameter-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-parameter-item p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2b2925;
+}
+
+.border-tow-text {
+  border-bottom: 2px dashed #2b2925;
+  width: 60%;
+  height: 11px;
+}
+
+/* PRODUCT PAGE END */
+
 /* BODY END */
 
 /* MEDIA QUERIE START */
@@ -936,6 +1007,9 @@ a.footer__contactItem {
   .slider-btn {
     width: 44px;
     height: 44px;
+  }
+  .border-tow-text {
+    width: 35%;
   }
 }
 
@@ -986,6 +1060,10 @@ a.footer__contactItem {
   .company-about-text p {
     font-size: 16px !important;
     line-height: 22px !important;
+  }
+  .product-parameter-item p {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
