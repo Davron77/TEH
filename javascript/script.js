@@ -41,15 +41,15 @@ registerBtn.addEventListener("click", function () {
   cardRegister.classList.toggle("Open__displayBlock");
 });
 
-// catalogBtn.addEventListener("click", function () {
-//   catalogMenu.classList.toggle("Open__displayBlock");
-//   catalogBtnClose.classList.toggle("Open__displayBlock");
-//   catalogBtnOpen.classList.toggle("Open__displayNone");
-// });
+catalogBtn.addEventListener("click", function () {
+  catalogMenu.classList.toggle("Open__displayBlock");
+  catalogBtnClose.classList.toggle("Open__displayBlock");
+  catalogBtnOpen.classList.toggle("Open__displayNone");
+});
 
-// productFilterBtn.addEventListener("click", function () {
-//   productFilter.classList.toggle("product-filter-open");
-// });
+productFilterBtn.addEventListener("click", function () {
+  productFilter.classList.toggle("product-filter-open");
+});
 
 //Initialize Swiper
 
