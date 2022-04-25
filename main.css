@@ -974,6 +974,46 @@ a.footer__contactItem {
 
 /* PRODUCT PAGE END */
 
+/* NEWS PAGE START */
+
+#news-home {
+  background-color: var(--dark-black);
+}
+
+.news-page {
+  background-color: var(--dark-black);
+  color: white;
+}
+
+.news-page-card {
+  padding-bottom: 80px;
+}
+
+.news-page-img img {
+  width: 100%;
+}
+
+.news-page-title h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.news-page-text p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: rgba(245, 245, 247, 0.8);
+}
+
+.news-page-btn i {
+  padding-left: 10px;
+  color: var(--red);
+}
+
+/* NEWS PAGE END */
+
 /* BODY END */
 
 /* MEDIA QUERIE START */
