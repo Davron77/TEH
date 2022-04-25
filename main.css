@@ -910,6 +910,19 @@ a.footer__contactItem {
   width: 202px;
 }
 
+.product-counter .input-group {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.product-counter input {
+  height: 48px;
+}
+
+.product-counter .btn {
+  border: none;
+}
+
 .product-contact-item {
   width: 48px;
   height: 48px;
@@ -1064,6 +1077,9 @@ a.footer__contactItem {
   .product-parameter-item p {
     font-size: 16px;
     line-height: 20px;
+  }
+  .product-counter {
+    width: 100%;
   }
 }
 
