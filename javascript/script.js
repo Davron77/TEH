@@ -15,6 +15,7 @@ const catalogBtnClose = document.querySelector(".catalog-btn-close");
 const catalogBtnOpen = document.querySelector(".catalog-btn-open");
 const productFilterBtn = document.getElementById("product-filter-btn");
 const productFilter = document.querySelector(".product-filter");
+const registerBtn = document.querySelector("#register-btn");
 
 const navbarToggler = document
   .getElementById("navbar-toggler")
@@ -28,22 +29,27 @@ const navbarToggler = document
   });
 
 user.addEventListener("click", function () {
-  cardRegister.classList.toggle("Open__displayBlock");
-  //cardLogin.classList.toggle("Open__displayBlock");
+  //cardRegister.classList.toggle("Open__displayBlock");
+  cardLogin.classList.toggle("Open__displayBlock");
   //cardAccount.classList.toggle("Open__displayBlock");
   bgDark.classList.toggle("Open__displayBlock");
   user.classList.toggle("header-user-show");
 });
 
-catalogBtn.addEventListener("click", function () {
-  catalogMenu.classList.toggle("Open__displayBlock");
-  catalogBtnClose.classList.toggle("Open__displayBlock");
-  catalogBtnOpen.classList.toggle("Open__displayNone");
+registerBtn.addEventListener("click", function () {
+  cardLogin.classList.remove("Open__displayBlock");
+  cardRegister.classList.toggle("Open__displayBlock");
 });
 
-productFilterBtn.addEventListener("click", function () {
-  productFilter.classList.toggle("product-filter-open");
-});
+// catalogBtn.addEventListener("click", function () {
+//   catalogMenu.classList.toggle("Open__displayBlock");
+//   catalogBtnClose.classList.toggle("Open__displayBlock");
+//   catalogBtnOpen.classList.toggle("Open__displayNone");
+// });
+
+// productFilterBtn.addEventListener("click", function () {
+//   productFilter.classList.toggle("product-filter-open");
+// });
 
 //Initialize Swiper
 

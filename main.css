@@ -46,6 +46,12 @@ a:hover {
   color: var(--dark-black) !important;
 }
 
+.input-group > .form-control:focus,
+.input-group > .form-select:focus {
+  z-index: 3;
+  color: white;
+}
+
 #bg-dark {
   background: #131414;
   opacity: 0.5;
@@ -334,6 +340,7 @@ form .btn,
 
 form .register-btn__dark {
   background-color: var(--dark-black);
+  text-align: center;
 }
 
 form i,
@@ -359,7 +366,7 @@ form i,
 .form-control {
   background: rgba(245, 245, 247, 0.05);
   border-radius: 2px;
-  color: var(--dark-black);
+  color: white;
   border: none;
 }
 
@@ -844,7 +851,7 @@ a.footer__contactItem {
 
 .form-control:focus {
   background: rgba(245, 245, 247, 0.05);
-  color: var(--dark-black);
+  color: white;
   box-shadow: none;
 }
 
@@ -980,7 +987,8 @@ a.footer__contactItem {
   background-color: var(--dark-black);
 }
 
-.news-page {
+.news-page,
+.contact-page {
   background-color: var(--dark-black);
   color: white;
 }
@@ -1013,6 +1021,51 @@ a.footer__contactItem {
 }
 
 /* NEWS PAGE END */
+/* CONTACT PAGE START */
+
+.contact-page-title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.contact-page-text p {
+  font-size: 20px;
+  line-height: 34px;
+  color: rgba(245, 245, 247, 0.8);
+}
+
+.contact-page-contact-soical {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.contact-page-contact-soical-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: rgba(245, 245, 247, 0.05);
+}
+
+.contact-page-contact-link i {
+  font-size: 27px;
+  padding: 0;
+}
+
+.contact-page-form input {
+  height: 48px;
+}
+
+.contact-page-form-btn {
+  width: 203px;
+  height: 47px;
+  text-align: center;
+}
+
+/* CONTACT PAGE END */
 
 /* BODY END */
 
@@ -1206,6 +1259,20 @@ a.footer__contactItem {
   }
   .product-info {
     margin: 30px 0;
+  }
+  .contact-page-form-btn {
+    width: 100%;
+  }
+  .contact-page-title h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .contact-page-text p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .contact-page-map iframe {
+    height: 343px;
   }
 }
 
