@@ -1091,7 +1091,7 @@ a.footer__contactItem {
 .card-page-card-price-icons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
 }
 
@@ -1338,6 +1338,17 @@ a.footer__contactItem {
   }
   .product-counter {
     width: 100%;
+  }
+  .card-page-card-name h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .card-page-card-price p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .card-page-card-input {
+    width: 130px;
   }
 }
 

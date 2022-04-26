@@ -227,14 +227,14 @@
                 <div class="col-12 col-lg-8 col-xl-9 my-5">
                     <div class="card-page-card">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-4 col-xl-3">
                                 <div class="card-page-card-img">
-                                    <img src="/images/card.png" alt="Card-img">
+                                    <img class="w-100" src="/images/card.png" alt="Card-img">
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8 col-xl-9">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-12 col-xl-6">
                                         <div class="card-page-card-name">
                                             <h2>AIR COMPRESSOR<br><span class="red-text">TAC50L</span></h2>
                                         </div>
@@ -245,8 +245,8 @@
                                             <h3>1 950 UZS</h3>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="d-none d-xl-block">
+                                    <div class="col d-none d-xl-block">
+                                        <div>
                                             <p>Всего</p>
                                             <h3>1 950 UZS</h3>
                                         </div>
@@ -265,9 +265,62 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div class="text-end">
-                                            <a href="#"><i class="fa-solid fa-copy pe-4"></i></a>
-                                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                                        <div class="card-page-card-price-icons">
+                                            <div class="text-end">
+                                                <a href="#"><i class="fa-solid fa-copy pe-4"></i></a>
+                                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-page-card mt-5">
+                        <div class="row">
+                            <div class="col-4 col-xl-3">
+                                <div class="card-page-card-img">
+                                    <img class="w-100" src="/images/card.png" alt="Card-img">
+                                </div>
+                            </div>
+                            <div class="col-8 col-xl-9">
+                                <div class="row">
+                                    <div class="col-12 col-xl-6">
+                                        <div class="card-page-card-name">
+                                            <h2>AIR COMPRESSOR<br><span class="red-text">TAC50L</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-page-card-price">
+                                            <p>Цена</p>
+                                            <h3>1 950 UZS</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col d-none d-xl-block">
+                                        <div>
+                                            <p>Всего</p>
+                                            <h3>1 950 UZS</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="card-page-card-counter">
+                                            <div class="input-group card-page-card-input">
+                                                <button class="btn btn-dark card-page-card-counter-btn" type="button"
+                                                    id="button-addon1">+</button>
+                                                <input type="text" class="form-control text-center" value="1">
+                                                <button class="btn btn-dark card-page-card-counter-btn" type="button"
+                                                    id="button-addon1">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-page-card-price-icons">
+                                            <div class="text-end">
+                                                <a href="#"><i class="fa-solid fa-copy pe-4"></i></a>
+                                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +347,28 @@
                                 <p class="text-muted">12 000 000 UZS</p>
                             </div>
                         </div>
-                        <button class="btn btn-dark card-page-order-btn mt-5 w-100 text-center">Оформить заказ</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark card-page-order-btn mt-5 w-100 text-cente"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
             </div>
