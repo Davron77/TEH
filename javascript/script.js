@@ -28,155 +28,43 @@ const navbarToggler = document
     navbarIconLogin.classList.toggle("hide");
   });
 
+let ClasscardRegister = false;
+
 user.addEventListener("click", function () {
-  //cardRegister.classList.toggle("catalog-menu-open-scale");
-  cardLogin.classList.toggle("catalog-menu-open-scale");
-  //cardAccount.classList.toggle("catalog-menu-open-scale");
-  bgDark.classList.toggle("Open__displayBlock");
-  user.classList.toggle("header-user-show");
+  if (ClasscardRegister) {
+    cardLogin.classList.remove("catalog-menu-open-scale");
+    //cardAccount.classList.toggle("catalog-menu-open-scale");
+    cardRegister.classList.remove("catalog-menu-open-scale");
+    bgDark.classList.remove("Open__displayBlock");
+    console.log(ClasscardRegister);
+    ClasscardRegister = false;
+  } else {
+    cardLogin.classList.toggle("catalog-menu-open-scale");
+    //cardAccount.classList.toggle("catalog-menu-open-scale");
+    cardRegister.classList.remove("catalog-menu-open-scale");
+    bgDark.classList.toggle("Open__displayBlock");
+    user.classList.toggle("header-user-show");
+    console.log(ClasscardRegister);
+  }
 });
 
 registerBtn.addEventListener("click", function () {
   cardLogin.classList.remove("catalog-menu-open-scale");
   cardRegister.classList.toggle("catalog-menu-open-scale");
+  ClasscardRegister = true;
 });
 
-catalogBtn.addEventListener("click", function () {
-  catalogMenu.classList.toggle("catalog-menu-open-scale");
-  catalogBtnClose.classList.toggle("Open__displayBlock");
-  catalogBtnOpen.classList.toggle("Open__displayNone");
-});
+if (catalogBtn) {
+  catalogBtn.addEventListener("click", function () {
+    catalogMenu.classList.toggle("catalog-menu-open-scale");
+    catalogBtnClose.classList.toggle("Open__displayBlock");
+    catalogBtnOpen.classList.toggle("Open__displayNone");
+  });
+}
 
 bgDark.addEventListener("click", function () {
   cardRegister.classList.remove("catalog-menu-open-scale");
   cardLogin.classList.remove("catalog-menu-open-scale");
   cardAccount.classList.remove("catalog-menu-open-scale");
   bgDark.classList.remove("Open__displayBlock");
-  console.log("hi");
-});
-
-// productFilterBtn.addEventListener("click", function () {
-//   productFilter.classList.toggle("product-filter-open");
-// });
-
-//Initialize Swiper
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 6,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.5,
-    },
-    400: {
-      slidesPerView: 2,
-    },
-    767: {
-      slidesPerView: 3,
-    },
-    991: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 6,
-    },
-  },
-});
-
-// index-page-product-card
-
-var swiper = new Swiper(".index-page-product", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.1,
-    },
-    500: {
-      slidesPerView: 1.5,
-    },
-    767: {
-      slidesPerView: 2,
-    },
-    991: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-  },
-});
-
-// product-card
-
-var swiper = new Swiper(".product-Swiper", {
-  slidesPerView: 6,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.5,
-    },
-    400: {
-      slidesPerView: 2,
-    },
-    767: {
-      slidesPerView: 3,
-    },
-    991: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4.5,
-    },
-  },
-});
-
-var swiper = new Swiper(".product", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.1,
-    },
-    500: {
-      slidesPerView: 1.5,
-    },
-    767: {
-      slidesPerView: 2,
-    },
-    991: {
-      slidesPerView: 2.5,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
 });
