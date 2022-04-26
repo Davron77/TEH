@@ -47,9 +47,9 @@ catalogBtn.addEventListener("click", function () {
   catalogBtnOpen.classList.toggle("Open__displayNone");
 });
 
-productFilterBtn.addEventListener("click", function () {
-  productFilter.classList.toggle("product-filter-open");
-});
+// productFilterBtn.addEventListener("click", function () {
+//   productFilter.classList.toggle("product-filter-open");
+// });
 
 //Initialize Swiper
 
