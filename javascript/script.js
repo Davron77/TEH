@@ -29,22 +29,30 @@ const navbarToggler = document
   });
 
 user.addEventListener("click", function () {
-  //cardRegister.classList.toggle("Open__displayBlock");
-  cardLogin.classList.toggle("Open__displayBlock");
-  //cardAccount.classList.toggle("Open__displayBlock");
+  //cardRegister.classList.toggle("catalog-menu-open-scale");
+  cardLogin.classList.toggle("catalog-menu-open-scale");
+  //cardAccount.classList.toggle("catalog-menu-open-scale");
   bgDark.classList.toggle("Open__displayBlock");
   user.classList.toggle("header-user-show");
 });
 
 registerBtn.addEventListener("click", function () {
-  cardLogin.classList.remove("Open__displayBlock");
-  cardRegister.classList.toggle("Open__displayBlock");
+  cardLogin.classList.remove("catalog-menu-open-scale");
+  cardRegister.classList.toggle("catalog-menu-open-scale");
 });
 
 catalogBtn.addEventListener("click", function () {
-  catalogMenu.classList.toggle("Open__displayBlock");
+  catalogMenu.classList.toggle("catalog-menu-open-scale");
   catalogBtnClose.classList.toggle("Open__displayBlock");
   catalogBtnOpen.classList.toggle("Open__displayNone");
+});
+
+bgDark.addEventListener("click", function () {
+  cardRegister.classList.remove("catalog-menu-open-scale");
+  cardLogin.classList.remove("catalog-menu-open-scale");
+  cardAccount.classList.remove("catalog-menu-open-scale");
+  bgDark.classList.remove("Open__displayBlock");
+  console.log("hi");
 });
 
 // productFilterBtn.addEventListener("click", function () {

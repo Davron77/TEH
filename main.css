@@ -291,8 +291,12 @@ footer img {
   box-shadow: 0px 2px 12px #1e1f1f;
   margin: auto;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 999;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .card__account {
@@ -446,7 +450,35 @@ form i,
   position: absolute;
   z-index: 99;
   background-color: var(--dark-black);
-  display: none;
+  /* display: none; */
+  width: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.catalog-menu-open-scale {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.catalog-menu .accordion-item {
+  background-color: var(--dark-black) !important;
+  padding-top: 50px;
+}
+
+.catalog-menu .accordion-button:not(.collapsed) {
+  background-color: var(--dark-black);
+}
+.catalog-menu .accordion-button {
+  background-color: var(--dark-black);
+  pointer-events: none;
+}
+
+.catalog-menu .accordion-body {
+  padding: 0;
+  padding-left: 60px;
 }
 
 .catalog-menu img {
@@ -460,6 +492,7 @@ form i,
   padding: 12px 0;
   font-size: 16px;
   margin: 0;
+  border-bottom: 2px solid var(--red);
 }
 
 .catalog-line {
@@ -1179,6 +1212,15 @@ a.footer__contactItem {
 
 /* BODY END */
 
+@media (min-width: 576px) {
+  .catalog-menu-show {
+    display: block !important;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+}
+
 /* MEDIA QUERIE START */
 @media (max-width: 575.98px) {
   header {
@@ -1226,6 +1268,9 @@ a.footer__contactItem {
   }
   .border-tow-text {
     width: 35%;
+  }
+  .catalog-menu .accordion-button {
+    pointer-events: all;
   }
 }
 
@@ -1313,6 +1358,7 @@ a.footer__contactItem {
     right: 0;
     transition: all 0.6s ease-in-out;
     transform: translateY(-100%);
+    z-index: 99;
   }
 
   .dropdown-menu {
@@ -1383,6 +1429,9 @@ a.footer__contactItem {
   }
   .contact-page-map iframe {
     height: 343px;
+  }
+  .catalog-menu .accordion-item {
+    padding: 0;
   }
 }
 
