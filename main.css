@@ -1328,7 +1328,8 @@ a.footer__contactItem {
   }
   .card__register,
   .card__login,
-  .card__account {
+  .card__account,
+  .card__password-lose {
     width: 100%;
   }
   ::placeholder {

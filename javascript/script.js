@@ -29,31 +29,30 @@ const navbarToggler = document
     faXmark.classList.toggle("navbar-bars__icons__hide");
     navbarIconLogin.classList.toggle("hide");
   });
-
-let ClasscardRegister = false;
+let i = 0;
 
 user.addEventListener("click", function () {
-  if (ClasscardRegister) {
+  i++;
+  if (i === 2) {
     cardLogin.classList.remove("catalog-menu-open-scale");
     //cardAccount.classList.toggle("catalog-menu-open-scale");
     cardRegister.classList.remove("catalog-menu-open-scale");
     bgDark.classList.remove("Open__displayBlock");
-    console.log(ClasscardRegister);
-    ClasscardRegister = false;
+    cardPasswordLose.classList.remove("catalog-menu-open-scale");
+    i = 0;
   } else {
     cardLogin.classList.toggle("catalog-menu-open-scale");
     //cardAccount.classList.toggle("catalog-menu-open-scale");
     cardRegister.classList.remove("catalog-menu-open-scale");
+    cardPasswordLose.classList.remove("catalog-menu-open-scale");
     bgDark.classList.toggle("Open__displayBlock");
     user.classList.toggle("header-user-show");
-    console.log(ClasscardRegister);
   }
 });
 
 registerBtn.addEventListener("click", function () {
   cardLogin.classList.remove("catalog-menu-open-scale");
   cardRegister.classList.toggle("catalog-menu-open-scale");
-  ClasscardRegister = true;
 });
 
 if (catalogBtn) {
@@ -69,12 +68,12 @@ bgDark.addEventListener("click", function () {
   cardLogin.classList.remove("catalog-menu-open-scale");
   cardAccount.classList.remove("catalog-menu-open-scale");
   bgDark.classList.remove("Open__displayBlock");
+  cardPasswordLose.classList.remove("catalog-menu-open-scale");
+  i = 0;
 });
 
 const passwordLosepage = () => {
   cardLogin.classList.remove("catalog-menu-open-scale");
   cardRegister.classList.remove("catalog-menu-open-scale");
-  bgDark.classList.remove("Open__displayBlock");
   cardPasswordLose.classList.toggle("catalog-menu-open-scale");
-  console.log("hi");
 };
