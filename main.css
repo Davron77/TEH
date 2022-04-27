@@ -1132,6 +1132,11 @@ a.footer__contactItem {
   color: #131414;
 }
 
+.card-page-order-btn:hover {
+  background-color: var(--red);
+  text-align: center;
+}
+
 /* CARD PAGE END */
 
 /* NEWS PAGE START */
@@ -1219,6 +1224,35 @@ a.footer__contactItem {
 }
 
 /* CONTACT PAGE END */
+/* CARD ORDER MODAL START */
+
+.card__order-modal {
+  background-color: var(--dark-black);
+  color: white;
+}
+
+.card__order-modal .form-control-lg {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card__order-modal ::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card__order-modal-btn-close {
+  background-color: rgba(245, 245, 247, 0.1) !important;
+  text-align: center;
+}
+
+.card__order-modal-btn-close:hover {
+  background-color: rgba(245, 245, 247, 0.034) !important;
+}
+
+/* CARD ORDER MODAL END */
 
 /* BODY END */
 
