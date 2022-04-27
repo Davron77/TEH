@@ -16,6 +16,8 @@ const catalogBtnOpen = document.querySelector(".catalog-btn-open");
 const productFilterBtn = document.getElementById("product-filter-btn");
 const productFilter = document.querySelector(".product-filter");
 const registerBtn = document.querySelector("#register-btn");
+const cardPasswordLose = document.getElementById("card__password-lose");
+const passwordLoseBtn = document.querySelectorAll(".password-lose-btn");
 
 const navbarToggler = document
   .getElementById("navbar-toggler")
@@ -68,3 +70,11 @@ bgDark.addEventListener("click", function () {
   cardAccount.classList.remove("catalog-menu-open-scale");
   bgDark.classList.remove("Open__displayBlock");
 });
+
+const passwordLosepage = () => {
+  cardLogin.classList.remove("catalog-menu-open-scale");
+  cardRegister.classList.remove("catalog-menu-open-scale");
+  bgDark.classList.remove("Open__displayBlock");
+  cardPasswordLose.classList.toggle("catalog-menu-open-scale");
+  console.log("hi");
+};

@@ -279,7 +279,8 @@ footer img {
 }
 
 .card__register,
-.card__login {
+.card__login,
+.card__password-lose {
   width: 380px;
   position: absolute;
   background-color: var(--dark-black);
