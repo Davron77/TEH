@@ -242,6 +242,11 @@ footer img {
 
 /* HEADER NAVBAR MOBILE START */
 
+.navbar-body-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .navbar-bars__icons {
   color: white;
 }

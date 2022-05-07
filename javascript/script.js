@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const navbarCollapse = document.querySelector(".navbar-collapse");
 const faBars = document.querySelector(".fa-bars");
 const faXmark = document.querySelector(".fa-xmark");
@@ -28,6 +29,7 @@ const navbarToggler = document
     faBars.classList.toggle("navbar-bars__icons__hide");
     faXmark.classList.toggle("navbar-bars__icons__hide");
     navbarIconLogin.classList.toggle("hide");
+    body.classList.toggle("navbar-body-open");
   });
 let i = 0;
 
