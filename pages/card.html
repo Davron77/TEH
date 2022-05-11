@@ -101,7 +101,7 @@
                                 <div class="navbar-icon__login ms-xl-4">
                                     <a class="navbar-icon__loginItem" href="/pages/card.html"><i
                                             class="fa-solid fa-bag-shopping"></i></a>
-                                    <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                    <a class="navbar-icon__loginItem" href="/pages/register.html"><i
                                             class="fa-solid fa-user"></i></a>
                                 </div>
                                 <div class="navbar-dropdown">
@@ -118,100 +118,6 @@
                 </nav>
             </div>
         </header>
-        <section>
-            <div class="container">
-                <div class="header__account">
-                    <div id="card__register" class="card card__register">
-                        <div class="card-body p-5">
-                            <h2 class="text-start mb-4">Регистрация</h2>
-                            <form>
-                                <div class="form-outline mb-3">
-                                    <label class="form-label">Имя</label>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Имя" />
-                                </div>
-                                <div class="form-outline mb-3">
-                                    <label class="form-label">Телефон</label>
-                                    <input type="text" class="form-control form-control-lg"
-                                        placeholder="+998 99 (__)___-__-__" />
-                                </div>
-                                <div class="form-outline mb-3">
-                                    <label class="form-label">Пароль</label>
-                                    <input type="password" class="form-control form-control-lg" placeholder="Пароль" />
-                                </div>
-                                <div class="form-check d-flex mb-5">
-                                    <input class="form-check-input me-2" type="checkbox" value="" />
-                                    <label class="form-check-label">Запомните меня</label>
-                                </div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-danger btn-lg w-100">Регистрация</button>
-                                </div>
-                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
-                                    Согласен с условиями<span class="text-muted"> Правил пользования
-                                        торговой площадкой и правилами возврата</span></p>
-                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
-                                    пароль?</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div id="card__login" class="card card__login">
-                        <div class="card-body p-5">
-                            <h2 class="text-start mb-4">Логин</h2>
-                            <form>
-                                <div class="form-outline mb-3">
-                                    <label class="form-label">Телефон</label>
-                                    <input type="text" class="form-control form-control-lg"
-                                        placeholder="+998 99 (__)___-__-__" />
-                                </div>
-                                <div class="form-outline mb-3">
-                                    <label class="form-label">Пароль</label>
-                                    <input type="password" class="form-control form-control-lg" placeholder="Пароль" />
-                                </div>
-                                <div class="form-check d-flex mb-5">
-                                    <input class="form-check-input me-2" type="checkbox" value="" />
-                                    <label class="form-check-label">Запомните меня</label>
-                                </div>
-                                <div class="d-flex">
-                                    <button type="button" class="btn btn-danger btn-lg w-100">Логин</button>
-                                </div>
-                                <div class="d-flex mt-2">
-                                    <button id="register-btn" type="button"
-                                        class="btn btn-dark btn-lg w-100 register-btn__dark">Регистрация</button>
-                                </div>
-                                <p class="mt-4 mb-3"><i class="fa-solid fa-check"></i>
-                                    Согласен с условиями<span class="text-muted"> Правил пользования
-                                        торговой площадкой и правилами возврата</span></p>
-                                <a href="#"><i class="fa-solid fa-circle-question"></i> Забыли
-                                    пароль?</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div id="card__account" class="card card__account">
-                        <div class="card-body p-5">
-                            <div class="avatar d-flex align-items-end pb-4">
-                                <img src="/images/avatar.png" class="pe-3" alt="Avatar">
-                                <div class="avatar-text">
-                                    <h6 class="avatar_name">Одилов Кадыр</h6>
-                                    <h6 class="avatar_phone">+998 (99) 897 45 04</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex pb-2">
-                                <button type="button" class="btn btn-dark btn-lg w-100"><i
-                                        class="fa-solid fa-user"></i>Мой
-                                    профиль</button>
-                            </div>
-                            <div class="d-flex pb-5">
-                                <button type="button" class="btn btn-dark btn-lg w-100"><i
-                                        class="fa-solid fa-bag-shopping"></i>Корзина</button>
-                            </div>
-                            <div class="d-flex">
-                                <button type="button" class="btn btn-danger btn-lg w-100 text-start"><i
-                                        class="fa-solid fa-arrow-right-from-bracket"></i>Выйти</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="container d-none d-lg-block">
             <nav class="py-3" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -348,8 +254,9 @@
                             </div>
                         </div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-danger card-page-order-btn mt-5 w-100 text-center"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">Оформить заказ</button>
+                        <a href="/pages/card-modal.html"><button type="button"
+                                class="btn btn-danger card-page-order-btn mt-5 w-100 text-center" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Оформить заказ</button></a>
                     </div>
                 </div>
             </div>
