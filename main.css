@@ -286,8 +286,7 @@ footer img {
 .card__register,
 .card__login,
 .card__password-lose {
-  width: 380px;
-  position: absolute;
+  width: 380px; 
   background-color: var(--dark-black);
   color: var(--dark-white);
   font-size: 12px;
@@ -296,13 +295,6 @@ footer img {
   border: 1px solid #2b2925;
   box-shadow: 0px 2px 12px #1e1f1f;
   margin: auto;
-  right: 0;
-  /* display: none; */
-  z-index: 999;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .card__account {
