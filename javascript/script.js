@@ -32,31 +32,6 @@ const navbarToggler = document
     body.classList.toggle("navbar-body-open");
   });
 let i = 0;
-
-user.addEventListener("click", function () {
-  i++;
-  if (i === 2) {
-    cardLogin.classList.remove("catalog-menu-open-scale");
-    //cardAccount.classList.toggle("catalog-menu-open-scale");
-    cardRegister.classList.remove("catalog-menu-open-scale");
-    bgDark.classList.remove("Open__displayBlock");
-    cardPasswordLose.classList.remove("catalog-menu-open-scale");
-    i = 0;
-  } else {
-    cardLogin.classList.toggle("catalog-menu-open-scale");
-    //cardAccount.classList.toggle("catalog-menu-open-scale");
-    cardRegister.classList.remove("catalog-menu-open-scale");
-    cardPasswordLose.classList.remove("catalog-menu-open-scale");
-    bgDark.classList.toggle("Open__displayBlock");
-    user.classList.toggle("header-user-show");
-  }
-});
-
-registerBtn.addEventListener("click", function () {
-  cardLogin.classList.remove("catalog-menu-open-scale");
-  cardRegister.classList.toggle("catalog-menu-open-scale");
-});
-
 if (catalogBtn) {
   catalogBtn.addEventListener("click", function () {
     catalogMenu.classList.toggle("catalog-menu-open-scale");
