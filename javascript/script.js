@@ -16,9 +16,6 @@ const catalogBtnClose = document.querySelector(".catalog-btn-close");
 const catalogBtnOpen = document.querySelector(".catalog-btn-open");
 const productFilterBtn = document.getElementById("product-filter-btn");
 const productFilter = document.querySelector(".product-filter");
-const registerBtn = document.querySelector("#register-btn");
-const cardPasswordLose = document.getElementById("card__password-lose");
-const passwordLoseBtn = document.querySelectorAll(".password-lose-btn");
 
 const navbarToggler = document
   .getElementById("navbar-toggler")
@@ -31,7 +28,11 @@ const navbarToggler = document
     navbarIconLogin.classList.toggle("hide");
     body.classList.toggle("navbar-body-open");
   });
-let i = 0;
+user.addEventListener("click", function () {
+  cardAccount.classList.toggle("catalog-menu-open-scale");
+  bgDark.classList.toggle("Open__displayBlock");
+});
+
 if (catalogBtn) {
   catalogBtn.addEventListener("click", function () {
     catalogMenu.classList.toggle("catalog-menu-open-scale");
@@ -41,16 +42,6 @@ if (catalogBtn) {
 }
 
 bgDark.addEventListener("click", function () {
-  cardRegister.classList.remove("catalog-menu-open-scale");
-  cardLogin.classList.remove("catalog-menu-open-scale");
   cardAccount.classList.remove("catalog-menu-open-scale");
   bgDark.classList.remove("Open__displayBlock");
-  cardPasswordLose.classList.remove("catalog-menu-open-scale");
-  i = 0;
 });
-
-const passwordLosepage = () => {
-  cardLogin.classList.remove("catalog-menu-open-scale");
-  cardRegister.classList.remove("catalog-menu-open-scale");
-  cardPasswordLose.classList.toggle("catalog-menu-open-scale");
-};
