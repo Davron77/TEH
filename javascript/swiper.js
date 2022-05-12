@@ -4,8 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 6,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -35,8 +34,10 @@ var swiper = new Swiper(".index-page-product", {
   slidesPerView: 4,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  freeMode: true,
+  pagination: {
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -66,8 +67,7 @@ var swiper = new Swiper(".product-Swiper", {
   slidesPerView: 6,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -95,8 +95,7 @@ var swiper = new Swiper(".product", {
   slidesPerView: 4,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
