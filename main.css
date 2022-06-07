@@ -445,6 +445,28 @@ form i,
   margin: 0;
   border-left: 3px solid #e32735;
   padding-left: 7px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.d-none.d-sm-block.index-filter-item {
+  padding: 0 6px;
+}
+
+.company-about-text {
+  text-transform: lowercase;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding: 0 16px;
 }
 
 .catalog-menu {
@@ -457,11 +479,13 @@ form i,
   transform: scale(0);
   -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
 }
 
 .catalog-menu-open-scale {
   -webkit-transform: scale(1);
   transform: scale(1);
+  opacity: 1 !important;
 }
 
 .catalog-menu .accordion {
@@ -483,7 +507,7 @@ form i,
 
 .catalog-menu .accordion-body {
   padding: 0;
-  padding-left: 60px;
+  padding-left: 20px;
 }
 
 .catalog-menu img {
@@ -579,6 +603,11 @@ form i,
   width: 100%;
   border-top: 3px solid var(--dark-black);
   padding: 10px 0;
+  height: 77px;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-slider-title p {
@@ -745,6 +774,11 @@ form i,
   font-weight: 600;
   font-size: 16px;
   color: rgba(25, 20, 20, 0.75);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 50px;
 }
 
 .product-card-btn {
@@ -766,6 +800,10 @@ form i,
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .news-text {
@@ -774,6 +812,15 @@ form i,
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #131414;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: lowercase;
+}
+
+.product-parameters {
+  margin-top: 40px;
 }
 
 .news-btn-more {
@@ -877,11 +924,8 @@ footer p {
 .product-filter-open {
   -webkit-transform: scale(1) !important;
   transform: scale(1) !important;
-  position: absolute;
-  z-index: 99;
-  top: -128px;
-  left: 0;
-  width: 100%;
+  top: -60px;
+  opacity: 1 !important;
 }
 
 .form-control:focus {
@@ -982,6 +1026,7 @@ footer p {
 
 .product-contact-link i {
   font-size: 18px;
+  padding: 0;
 }
 
 .product-price h3 {
@@ -1491,6 +1536,11 @@ footer p {
     -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: absolute;
+    z-index: 99;
+    width: 100%;
+    opacity: 0;
+    left: 0;
+    width: 100%;
   }
   .product-filter-btn {
     display: block;
