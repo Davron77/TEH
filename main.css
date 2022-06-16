@@ -184,7 +184,7 @@ button#dropdownMenuButton2:focus {
 
 header {
   background-color: var(--dark-black);
-  height: 120px;
+  height: 140px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -236,6 +236,45 @@ footer img {
   position: absolute;
   right: 0;
   z-index: 999;
+}
+
+.search {
+  padding: 20px;
+  text-align: center;
+}
+
+.search input {
+  background-color: var(--dark-white);
+  border: 2px solid var(--red);
+  color: var(--dark-black);
+  border-radius: 99px 0 0 99px;
+  padding-left: 35px;
+}
+
+.search input:focus {
+  background-color: var(--dark-white);
+  color: var(--dark-black);
+}
+
+.search-btn {
+  background-color: var(--red);
+  border: none;
+  border-radius: 0 99px 99px 0;
+  font-size: 16px;
+  padding: 0 15px;
+  color: var(--dark-white);
+}
+
+.search span {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  padding-top: 12px;
+  padding-left: 14px;
+}
+
+.search span i {
+  color: var(--red);
 }
 
 /* HEADER NAVBAR END */
@@ -1354,7 +1393,7 @@ footer p {
 /* MEDIA QUERIE START */
 @media (max-width: 575.98px) {
   header {
-    height: 80px;
+    height: 110px;
   }
   .navbar-icon__login i,
   .navbar-bars__icons i {
